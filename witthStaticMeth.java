@@ -34,7 +34,6 @@ public class witthStaticMeth {
         System.out.print(root.data+" ");
     }
     public static void main(String[] args) {
-        witthStaticMeth obj=new witthStaticMeth();
         Node first=new Node(1);
         first.left=new Node(2);
         first.right=new Node(3);
