@@ -24,6 +24,14 @@ public class leveloreder {
             System.out.println(temp.data);
         }
     }
+    static void preOrder(Node root){
+        if(root==null){
+            return;
+        }
+        System.out.println(root.data);
+        preOrder(root.left);
+        preOrder(root.right);
+    }
     public static void main(String[] args) {
         Node root=new Node(1);
         Node second=new Node(2);
@@ -40,5 +48,6 @@ public class leveloreder {
         third.right=seven;
         leveloreder obj=new leveloreder();
         obj.levelOr(root);
+        preOrder(root);
     }
 }
