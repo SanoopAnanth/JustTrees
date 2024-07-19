@@ -34,17 +34,26 @@ public class witthStaticMeth {
         System.out.print(root.data+" ");
     }
     public static void main(String[] args) {
-        Node first=new Node(1);
-        first.left=new Node(2);
-        first.right=new Node(3);
-        first.left.right=new Node(4);
+        Node root=new Node(1);
+        Node second=new Node(2);
+        Node third=new Node(3);
+        Node four=new Node(4);
+        Node five=new Node(5);
+        Node six=new Node(6);
+        Node seven=new Node(7);
+        root.left=second;
+        root.right=third;
+        second.left=four;
+        second.right=five;
+        third.left=six;
+        third.right=seven;
         System.out.println("Inorder traversal is: ");
-        inorder(first);
+        inorder(root);
         System.out.println();
         System.out.println("Preorder:");
-        preorder(first);
+        preorder(root);
         System.out.println();
         System.out.println("Postorder:");
-        postorder(first);
+        postorder(root);
     }
 }
